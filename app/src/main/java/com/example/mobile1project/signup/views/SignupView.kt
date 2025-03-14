@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 fun SignupView() {
     Column {
         Text(
-            text = "Registo",
+            text = "Registro",
         )
     }
 }
