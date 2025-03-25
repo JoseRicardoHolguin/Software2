@@ -77,6 +77,7 @@ fun LoginView() {
 
         Spacer(modifier = Modifier.height(8.dp))
 
+
         // Campo de contraseña
         OutlinedTextField(
             value = password,
