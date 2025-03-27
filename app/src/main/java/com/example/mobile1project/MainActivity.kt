@@ -1,5 +1,6 @@
 package com.example.mobile1project
 
+import IMCScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -11,7 +12,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.mobile1project.login.views.LoginView
 import com.example.mobile1project.ui.theme.Mobile1ProjectTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Mobile1ProjectTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    SumaApp()
+                    IMCScreen()
                 }
             }
         }
