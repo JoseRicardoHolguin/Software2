@@ -3,9 +3,11 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.mobile1project.R
 
 @Composable
 fun IMCScreen(viewModel: IMCViewModel = viewModel()) {
@@ -15,12 +17,12 @@ fun IMCScreen(viewModel: IMCViewModel = viewModel()) {
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
-        Text("Calculadora de IMC", style = MaterialTheme.typography.headlineSmall)
+        Text((stringResource(id= R.string.calculadora)), style = MaterialTheme.typography.headlineSmall)
 
         OutlinedTextField(
             value = viewModel.weight.value,
             onValueChange = { viewModel.weight.value = it },
-            label = { Text("Peso (kg)") },
+            label = { Text(stringResource(id= R.string.peso)) },
             keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Number),
             isError = viewModel.weightError.value != null,
             supportingText = { viewModel.weightError.value?.let { Text(it, color = MaterialTheme.colorScheme.error) } }
@@ -29,7 +31,7 @@ fun IMCScreen(viewModel: IMCViewModel = viewModel()) {
         OutlinedTextField(
             value = viewModel.height.value,
             onValueChange = { viewModel.height.value = it },
-            label = { Text("Altura (cm)") },
+            label = { Text(stringResource(id= R.string.altura)) },
             keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Number),
             isError = viewModel.heightError.value != null,
             supportingText = { viewModel.heightError.value?.let { Text(it, color = MaterialTheme.colorScheme.error) } }
@@ -39,12 +41,13 @@ fun IMCScreen(viewModel: IMCViewModel = viewModel()) {
             onClick = { viewModel.calculateIMC() },
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text("Calcular IMC")
+            Text(stringResource(id= R.string.Calcular))
         }
 
         viewModel.result.value?.let { result ->
             Text("IMC: ${"%.2f".format(result.imc)}")
-            Text("Clasificación: ${result.classification}")
+            Text(text = stringResource(id = R.string.Clasificación) + result.classification)
+
         }
     }
 }
