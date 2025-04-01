@@ -7,4 +7,6 @@
     <string name="peso">Peso</string>
     <string name="altura">Altura</string>
     <string name="calculadora">Calculadora de IMC</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="celcius">Celcius</string>
 </resources>
