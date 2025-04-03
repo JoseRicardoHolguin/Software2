@@ -1,6 +1,7 @@
 package com.example.mobile1project
 
 import IMCScreen
+import TempView
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Mobile1ProjectTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    IMCScreen()
+                    TempView()
                 }
             }
         }

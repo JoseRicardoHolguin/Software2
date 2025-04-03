@@ -2,4 +2,11 @@
 <resources>
     <string name="app_name">ProyectoMobiles</string>
     <string name="email">Correo electronico</string>
+    <string name="Clasificación">Clasificacion</string>
+    <string name="Calcular">Calcular</string>
+    <string name="peso">Peso</string>
+    <string name="altura">Altura</string>
+    <string name="calculadora">Calculadora de IMC</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="celcius">Celcius</string>
 </resources>
