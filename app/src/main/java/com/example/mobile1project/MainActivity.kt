@@ -13,6 +13,7 @@ class MainActivity : ComponentActivity() {
             Mobile1ProjectTheme {
                 Surface(color = MaterialTheme.colorScheme.background) {
                     TabBarNavigationView()
+
                 }
             }
         }
