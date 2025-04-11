@@ -1,4 +1,4 @@
-package com.example.mobile1project.signup.views
+package com.example.mobile1project.Ids.signup.views
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text

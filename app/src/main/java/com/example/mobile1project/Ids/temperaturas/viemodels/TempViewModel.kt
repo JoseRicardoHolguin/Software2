@@ -1,9 +1,9 @@
-package com.example.mobile1project.temperaturas.viemodels
+package com.example.mobile1project.Ids.temperaturas.viemodels
 
 import androidx.lifecycle.ViewModel
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.viewModelScope
-import com.example.mobile1project.temperaturas.models.TempRes
+import com.example.mobile1project.Ids.temperaturas.models.TempRes
 import kotlinx.coroutines.launch
 import kotlin.math.absoluteValue
 

@@ -13,7 +13,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.mobile1project.R
-import com.example.mobile1project.temperaturas.viemodels.TempViewModel
+import com.example.mobile1project.Ids.temperaturas.viemodels.TempViewModel
 
 @Composable
 fun TempView(viewModel: TempViewModel = viewModel()) {

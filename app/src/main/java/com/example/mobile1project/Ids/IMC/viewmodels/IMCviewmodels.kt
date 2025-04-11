@@ -1,7 +1,7 @@
 import androidx.lifecycle.ViewModel
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.viewModelScope
-import com.example.mobile1project.IMC.models.IMCResult
+import com.example.mobile1project.Ids.IMC.models.IMCResult
 import kotlinx.coroutines.launch
 
 class IMCViewModel : ViewModel() {
