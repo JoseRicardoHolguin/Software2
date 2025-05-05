@@ -15,7 +15,7 @@ class StudentViewModel : ViewModel() {
             Student("Jesús Omar Acuña Martínez"),
             Student("Luis Angel Hernandez"),
             Student("Sara Escamilla"),
-            Student("Alejandro Carrasco"),
+            Student("Alejandro Carrasco Maldonado"),
             Student("Miguel Ruiz"),
             Student("Felix Neder"),
             Student("Manuel Saenz")
