@@ -3,6 +3,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material3.*
+import com.example.mobile1project.ThirdPartial.API.View.LocationListView
 import com.example.mobile1project.navigation.TabBarNavigationView
 import com.example.mobile1project.ui.theme.Mobile1ProjectTheme
 
@@ -12,7 +13,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Mobile1ProjectTheme {
                 Surface(color = MaterialTheme.colorScheme.background) {
-                    TabBarNavigationView()
+                    LocationListView()
 
                 }
             }
