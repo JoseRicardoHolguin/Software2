@@ -12,4 +12,5 @@ sealed class ScreenNavigation(val route: String, val label: String, val icon: Im
     object IMC : ScreenNavigation("IMCRoute", "IMC", Icons.Default.Event)
     object Login : ScreenNavigation("LoginRoute", "Login", Icons.Default.Event)
     object Temperature : ScreenNavigation("TemperatureRoute", "Temperature", Icons.Default.Event)
+
 }

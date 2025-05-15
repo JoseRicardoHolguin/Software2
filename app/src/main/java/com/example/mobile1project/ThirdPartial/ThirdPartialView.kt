@@ -33,6 +33,17 @@ fun ThirdPartialView(navController: NavController) {
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Lista De Estudiantes")
+
+        }
+
+        Button(
+            onClick = {
+                navController.navigate("GymAPI")
+            },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Lista de Gimnasios")
+
         }
     }
 }

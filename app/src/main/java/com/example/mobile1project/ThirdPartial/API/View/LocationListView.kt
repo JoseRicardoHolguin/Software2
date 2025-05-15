@@ -45,12 +45,12 @@ fun LocationListView(viewModel: LocationViewModel = viewModel()) {
                         verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier.padding(8.dp)
                     ) {
-                        // Image(
-                         //   painter = painterResource(id = getDrawableId(location.imageUrl)),
-                         //   contentDescription = null,
-                         //   modifier = Modifier.size(64.dp),
-                         //   contentScale = ContentScale.Crop
-                       // )
+                        Image(
+                           painter = painterResource(id = getDrawableId(location.imageUrl.lowercase())),
+                           contentDescription = null,
+                           modifier = Modifier.size(64.dp),
+                           contentScale = ContentScale.Crop
+                        )
                         Spacer(modifier = Modifier.width(8.dp))
                         Column {
                             Text(text = "Name: ${location.name}")
