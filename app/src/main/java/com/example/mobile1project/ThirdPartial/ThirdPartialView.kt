@@ -45,5 +45,13 @@ fun ThirdPartialView(navController: NavController) {
             Text("Lista de Gimnasios")
 
         }
+        Button(
+            onClick = {
+                navController.navigate("Examen3P")
+            },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Examen Tercer Parcial")
+        }
     }
 }

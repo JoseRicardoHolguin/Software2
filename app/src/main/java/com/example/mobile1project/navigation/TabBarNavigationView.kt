@@ -16,10 +16,14 @@ import com.example.mobile1project.SecondPartial.SecondPartialView
 import com.example.mobile1project.Ids.login.views.LoginView
 import com.example.mobile1project.ListaEstudiantes.View.StudentView
 import com.example.mobile1project.ThirdPartial.API.View.LocationListView
+import com.example.mobile1project.ThirdPartial.ExamenEstudiantes.View.StudentListView
+import com.example.mobile1project.ThirdPartial.ExamenEstudiantes.ViewModel.StudentViewModel
 import com.example.mobile1project.ThirdPartial.ThirdPartialView
 
 @Composable
-fun TabBarNavigationView(navController: NavHostController = rememberNavController()) {
+fun TabBarNavigationView(navController: NavHostController = rememberNavController(),
+                         studentViewModel: StudentViewModel
+) {
     val items = listOf(
         ScreenNavigation.Ids,
         ScreenNavigation.FirstPartial,
@@ -61,8 +65,10 @@ fun TabBarNavigationView(navController: NavHostController = rememberNavControlle
             composable(ScreenNavigation.Temperature.route) { TempView() }
             composable("studentList") { StudentView() }
             composable("GymAPI") { LocationListView() }
+            composable("Examen3P") { StudentListView(uiState = studentViewModel.uiState) }
             }
 
         }
         }
+
 
